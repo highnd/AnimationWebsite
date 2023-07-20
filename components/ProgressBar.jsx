@@ -20,7 +20,7 @@ const ProgressBar = () => {
                 90 <span>%</span>
               </h2>
             </div>
-            <h2 className="text uppercase">ASS</h2>
+            <h2 className="text uppercase">code</h2>
           </div>
         </div>
       </motion.section>
@@ -39,7 +39,7 @@ const ProgressBar = () => {
                 60 <span>%</span>
               </h2>
             </div>
-            <h2 className="text uppercase">TITIS</h2>
+            <h2 className="text uppercase">design</h2>
           </div>
         </div>
       </motion.section>
@@ -58,7 +58,7 @@ const ProgressBar = () => {
                 70 <span>%</span>
               </h2>
             </div>
-            <h2 className="text uppercase">BITCH SKILLS</h2>
+            <h2 className="text uppercase">teamwork</h2>
           </div>
         </div>
       </motion.section>
