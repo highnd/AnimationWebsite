@@ -10,8 +10,15 @@ import { motion } from "framer-motion";
 
 import { fadeIn } from "../variants";
 import { TypingText } from "../components/CustomTexes";
+import Documentation from "../components/documentation";
 
 const Home = () => {
+  const code = `
+  // hello im mahdi fallah a 
+  "creative web developer" 
+  im working on {great} idea for 
+  the future design [web 'app']
+    `;
   return (
     <div className="bg-primary/60 w-full h-full">
       {/* Text */}
@@ -23,7 +30,7 @@ const Home = () => {
       >
         <div className="flex flex-col text-center justify-center xl:pt-32 pt-20 xl:text-left h-full container mx-auto">
           {/* title */}
-          <h1 className="h1 ">
+          <h1 className="h1 my-1">
             Do you looking for Creative
             <br />
             <span className="text-accent stroke-text">
@@ -36,7 +43,7 @@ const Home = () => {
             title="| Developer Info"
             textStyles=" xl:text-left text-center text-red-400"
           />
-          {/* discription */}
+          {/* description */}
           <motion.p
             variants={fadeIn("down", 0.2)}
             initial="hidden"
@@ -46,7 +53,7 @@ const Home = () => {
           >
             if you are looking for a great developer with creative ideas for
             your website or Apps .. welcome to my website!! you can connect to
-            me and see my works from my years of exprience .. im open to any
+            me and see my works from my years of experience .. im open to any
             creative works and big ideas.
           </motion.p>
           {/* button */}
@@ -65,22 +72,26 @@ const Home = () => {
         </div>
       </motion.section>
 
-      {/* image */}
+      {/* doc and bg animation */}
       <section className="w-[1200px] h-full absolute right-0 bottom-0">
         <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0 "></div>
         {/*  particles  */}
         <ParticlesContainer />
 
-        {/* avatar */}
+        {/* documentStart */}
         <motion.div
           variants={fadeIn("up", 0.7)}
           initial="hidden"
           animate="show"
           exit="hidden"
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="w-full h-full max-w-[500px] max-h-[500px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]"
+          className="hidden xl:flex w-[400px] h-[250px]  absolute p-4  bottom-44 right-52 bg-gray-800/90 rounded-lg"
         >
-          <Avatar />
+          <Documentation
+            containerStyle="h-64 "
+            moduleName="button"
+            mainCode={code}
+          />
         </motion.div>
       </section>
     </div>

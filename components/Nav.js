@@ -1,10 +1,6 @@
 import { HiHome, HiUser } from "react-icons/hi";
-import {
-  HiRectangleGroup,
-  HiViewColumns,
-  HiChatBubbleBottomCenterText,
-  HiEnvelope,
-} from "react-icons/hi2";
+import { HiRectangleGroup, HiViewColumns, HiEnvelope } from "react-icons/hi2";
+import { FaCode } from "react-icons/fa";
 
 // next Link
 import Link from "next/link";
@@ -34,9 +30,9 @@ const Datalinks = [
     icon: <HiViewColumns />,
   },
   {
-    name: "testimonials",
-    path: "/testimonials",
-    icon: <HiChatBubbleBottomCenterText />,
+    name: "documentation",
+    path: "/documentationModule",
+    icon: <FaCode />,
   },
   {
     name: "contact",
